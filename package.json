@@ -14,15 +14,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dr-Zed-c-GAS-tokens.git"
+    "url": "git+https://github.com/DrZedd42/c-GAS-tokens.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Dr-Zed/c-GAS-tokens/issues"
+    "url": "https://github.com/DrZedd42/c-GAS-tokens/issues"
   },
-  "homepage": "https://github.com/Dr-Zed/c-GAS-tokens#readme",
+  "homepage": "https://github.com/DrZedd42/c-GAS-tokens#readme",
   "dependencies": {
     "assert-diff": "^1.2.6",
     "bignumber.js": "6.0.0",
