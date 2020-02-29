@@ -1,29 +1,29 @@
 // Address of the FiatToken Implementation
-var fiatTokenAddress = "0x0882477e7895bdc5cea7cb1552ed914ab157fe56";  //TODO:  EDIT ME!  -- main token address of contract
+var fiatTokenAddress = "0x0882477e7895bdc5cea7cb1552ed914ab157fe56";  //TODO:  EDIT ME!  -- main token address of contract - you have to upload the fiatToken implimentation contract or possibly use theirs?
 
 // Address of the FiatToken Proxy
-var fiatTokenProxyAddress = "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48";  //TODO:  EDIT ME! -- main proxy contract for token
+var fiatTokenProxyAddress = "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48";  //TODO:  EDIT ME! -- main proxy contract for token - you have to create this on the blockchain in question to get this input
 
 // role addresses
-var MASTER_MINTER = 0x1500A138523709cE66C8B9aBe678aBc1b6C5A7b7;  //TODO: CHANGE ME TO PROPER ADDRESS OF MASTER MINTER!
-var PAUSER = 0xe8e13e1B6d363C270eF3A5AB466eBAd8326311bb;  //TODO: EDIT ME!  CHANGE ME TO PROPER PAUSER 
-var UPGRADER = 0x69005ff70072c57547dC44ea975d85ea60e5B196;  //TODO:  EDIT!
-var OWNER = 0xa61E278899a8553d93D14eb19bA2791e05069e87;  //TODO:  EDIT!
-var BLACKLISTER = 0x063d13783A0A2Ce65b1Ca00D9e897E6c8B1Ec86B;  //TODO: EDIT!
+var MASTER_MINTER = 0xc68537F71F21b0cA68d7eA4E2317ae4414EDd9A7;  //TODO: CHANGE ME TO PROPER ADDRESS OF MASTER MINTER!
+var PAUSER = 0x8c1a0B65F5218649Db12fcbB2fB6Ad246f399bd6;  //TODO: EDIT ME!  CHANGE ME TO PROPER PAUSER 
+var UPGRADER = 0xc68537F71F21b0cA68d7eA4E2317ae4414EDd9A7;  //TODO:  EDIT!
+var OWNER = 0xc68537F71F21b0cA68d7eA4E2317ae4414EDd9A7;  //TODO:  EDIT!
+var BLACKLISTER = 0x8c1a0B65F5218649Db12fcbB2fB6Ad246f399bd6B;  //TODO: EDIT!
 
 // Addresses of known minters - currently fake minters
 // If replacing with real minters need to modify printMinterInfo
-var minters = ["0x0000", "0x0001"];
+var minters = ["0xc68537F71F21b0cA68d7eA4E2317ae4414EDd9A7"];
 
-var NAME = "c-GAS";  //CHANGE TO F//Co2
-var SYMBOL = "c-GAS";  //CHANGE TO FCO2
+var NAME = "cGAS - Carbon Global Accounting System";  //CHANGE TO F//Co2
+var SYMBOL = "cgas";  //CHANGE TO FCO2
 var CURRENCY = "USD";  // DO NOT CHANGE.  Pegs to USD.
 var DECIMALS = 18 ;  //TODO:  Change to 18
-var TOTALSUPPLY =  0; //TODO: 500 billion total supply to start.
+var TOTALSUPPLY =  16000000000000; //TODO: 500 billion total supply to start.
 var PAUSED = false  /// DO NOT CHANGE -- this pauses the blockchain.
 
 // Name of current implementation artifact as stored in ./build/contracts/*.json
-var FiatToken = artifacts.require("FiatTokenV1");
+var FiatToken = artifacts.require("FiatTokenV2");
 
 // Name of current proxy artifact as stored in ./build/contracts/*.json
 var FiatTokenProxy = artifacts.require("FiatTokenProxy");
