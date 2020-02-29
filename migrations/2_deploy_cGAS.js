@@ -1,8 +1,8 @@
-var FiatTokenV1 = artifacts.require("./FiatTokenV1.sol");
+var FiatTokenV1 = artifacts.require("./FiatTokenV2.sol");
 var FiatTokenProxy = artifacts.require("./FiatTokenProxy.sol");
 
 // Any address will do, preferably one we generated
-var throwawayAddress = "0x64e078a8aa15a41b85890265648e965de686bae6";
+var throwawayAddress = "0x7DBF08492aC0F600eb6d3B8C275aBCFcA216a784";
 
 module.exports = function(deployer, network, accounts) {
 
@@ -54,8 +54,8 @@ module.exports = function(deployer, network, accounts) {
             // this is fine because the proxy will forward all the calls to the FiatTokenV1 impl
             tokenProxy = FiatTokenV1.at(tokenProxy.address);
             return tokenProxy.initialize(
-                "c-GAS",
-                "c-GAS",
+                "cGAS - carbon Global Accounting System",
+                "cGAS",
                 "USD",
                 18,
                 masterMinter,
