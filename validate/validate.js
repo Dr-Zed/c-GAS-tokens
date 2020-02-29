@@ -23,7 +23,7 @@ var TOTALSUPPLY =  16000000000000; //TODO: 500 billion total supply to start.
 var PAUSED = false  /// DO NOT CHANGE -- this pauses the blockchain.
 
 // Name of current implementation artifact as stored in ./build/contracts/*.json
-var FiatToken = artifacts.require("FiatTokenV2");
+var FiatToken = artifacts.require("FiatTokenV1");
 
 // Name of current proxy artifact as stored in ./build/contracts/*.json
 var FiatTokenProxy = artifacts.require("FiatTokenProxy");
